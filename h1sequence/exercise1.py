@@ -1,0 +1,10 @@
+surname = str(input("surname: "))
+firstname = str(input("first name: "))
+street = str(input("street: "))
+number = int(input("number: "))
+zip = int(input("zip code: "))
+city = str(input("city: "))
+
+print(firstname + " " + surname)
+print(street + " " + str(number))
+print(str(zip) + " " + city)
