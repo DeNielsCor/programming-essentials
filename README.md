@@ -8,6 +8,7 @@ Deze repository bevat mijn oplossingen en notities uit de cursus **Programming E
 ## 📁 Mappenstructuur
 
 ```
+📁 Test_exam         → Premodule exam code
 📁 h1sequence        → Basis en sequenties
 📁 h2selection       → Condities en beslissingen
 📁 h3iteration       → Lussen en herhaling
