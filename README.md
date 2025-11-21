@@ -15,6 +15,7 @@ Deze repository bevat mijn oplossingen en notities uit de cursus **Programming E
 📁 h4strings         → Werken met tekst en strings
 📁 h5tupleandlist    → Tuples en lijsten
 📁 h6functions       → Functies en modulariteit
+📁 h7textfiles       → Text bestanden lezen en maken
 📁 .idea             → PyCharm projectinstellingen
 ```
 
