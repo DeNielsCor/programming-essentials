@@ -1,18 +1,28 @@
-def remove_vowels(line):
-    new_line = ""
-    for character in line:
-        if character.lower() not in 'aeiou':
-            new_line += character
-    return new_line
+def remove_vowels(s: str) -> str:
+    vowels = "aeiouAEIOU"
+    result = ""
+    for ch in s:
+        if ch not in vowels:
+            result += ch
+    return result
 
-input_file = open('Files Chapter 7/hamlet2.txt')
-output_file = open("Files Chapter 7/hamlet3.txt", 'w')
 
-number_read = 0
+input_path = "Files Chapter 7/hamlet2.txt"
+output_path = "Files Chapter 7/hamlet3.txt"
 
-line = input_file.readline()
-while line:
-    line = input_file.readline()
+chars_read = 0
+chars_written = 0
 
-output_file.close()
-input_file.close()
+with open(input_path, "r", encoding="utf-8") as infile, \
+     open(output_path, "w", encoding="utf-8") as outfile:
+
+    for line in infile:            # read line-by-line
+        chars_read += len(line)
+
+        no_vowels = remove_vowels(line)
+        chars_written += len(no_vowels)
+
+        outfile.write(no_vowels)
+
+print("Characters read:   ", chars_read)
+print("Characters written:", chars_written)
